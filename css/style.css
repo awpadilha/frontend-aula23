@@ -50,13 +50,6 @@ header li a:hover{
   color: black;
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-    gap: 30px;
-    text-align: center;
-  }
-
   #banner{
     background-image: url(../img/katana.png);
     background-size: cover;
@@ -71,19 +64,33 @@ header li a:hover{
   .texto{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
-    text-align: center;
+    text-align: justify;
+    align-items: center;
     padding: 30px;
     color: rgba(255, 217, 0, 0.733);
     font-size: 25px;
     flex-direction: column;
-    gap: 10px;
+    gap: 100px;
     font-family: 'Lato', sans-serif;
   }
 
-  .videos {
-    display: grid;
+  .titulo {
+    text-align: center;
+    padding: 30px 50px;
+  }
+
+  #video {
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    gap: 50px;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
     text-align: center;
   }
 
@@ -98,7 +105,17 @@ header li a:hover{
   }
 
 
-  
+  @media(max-width: 1280px){
+    .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+      flex-direction:column;
+      align-items: center;
+    }
+
+  }
   
 
     
